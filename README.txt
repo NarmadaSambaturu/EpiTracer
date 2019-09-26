@@ -5,8 +5,6 @@ effectively a change at a particular node can ripple across the network by ident
 highest activity paths specific to the condition of interest, obtained by mapping gene 
 expression profiles to the PPI network.
 
-This code uses Python2.7, and Networkx1.11 
-
 ***************************************************************************************
 PART I - Computing Epicenters
 Usage
