@@ -7,7 +7,7 @@ import networkx as nx
 #	   key -> node
 #	   value -> ripple centrality of this node
 def compute_ripple_centrality(G):
-	closeness_centr = nx.closeness_centrality(G, distance = True)
+	closeness_centr = nx.closeness_centrality(G, distance = 'weight')
 	shortest_path_costs = nx.all_pairs_dijkstra_path_length(G)
 	reachable = {} # key -> node, value -> no. of nodes reachable from that node
 	for n in G.nodes():
